@@ -1,88 +1,74 @@
 :root {
-    --primary: #d62f67;
-    --secondary: rgb(178, 16, 253);
-    --dark: black;
-    --light: rgb(238, 238, 226);
+  --primary: #d62f67;
+  --secondary: rgb(178, 16, 253);
+  --dark: black;
+  --light: rgb(238, 238, 226);
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    background-color: var(--light);
+body {
+  background-color: var(--light);
 }
 
-.App{
-    display: flex;
-    min-height: 100vh;
-    justify-content: center;
-    align-items: center;
-    padding: 16px;
+.App {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
-.calculator{
-    width: 100%;
-    max-width: 400px;
-    background-color: #FFF;
-    border-radius: 16px;
-    overflow: hidden;
+.calculator {
+  width: 350px;
+  border-radius: 16px;
+  overflow: hidden;
 }
 
-.display{
-    padding: 16px;
-    text-align: right;
-    background-color: var(--dark);
-    color: var(--light);
-    font-size: 24px;
-    font-weight: 300;
+.display {
+  padding: 16px;
+  text-align: right;
+  background-color: var(--dark);
+  color: var(--light);
+  font-size: 24px;
+  font-weight: 300;
 }
 
-.display span{
-    font-size: 14px;
-    color: #BBB;
+.display span {
+  font-size: 14px;
+  color: #bbb;
 }
 
-button{
-    appearance: none;
-    border: none;
-    outline: none;
-    color: #FFF;
-    font-size: 20px;
-    padding: 16px;
-    cursor: pointer;
-    transition: 0.4s;
+button {
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  padding: 16px;
+  cursor: pointer;
 }
 
-button:hover{
-    opacity: 0.9;
+button:hover {
+  opacity: 0.7;
 }
 
-.operators{
-    display: flex;
+.operators {
+  display: flex;
 }
 
-.operators button{
-    flex: 1 1 0%;
-    background-color: var(--primary);
-    font-weight: 700;
+.operators button {  
+  flex: 1 0 0;
+  background-color: var(--primary);
+  font-weight: 700;
 }
 
-.digits{
-    display: flex;
-    flex-wrap: wrap;
+.digits {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.digits button{
-    flex : 1 1 33.333%;
-    max-width: 33.333%;
-    background-color: var(--dark);
+button {
+  flex: 1 0 30%;
+  background-color: var(--dark);
 }
-
-
-
-
-
-
